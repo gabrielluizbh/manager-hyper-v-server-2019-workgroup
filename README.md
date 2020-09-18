@@ -1,6 +1,6 @@
 # Script Hyper-V Server 2019 -  Gerenciamento Remoto em Workgroup.
 
-Contéudo: 
+Conteúdo:
 
 Script Hyper-V Server 2019 - Gerenciamento Remoto em Workgroup.ps1
 
