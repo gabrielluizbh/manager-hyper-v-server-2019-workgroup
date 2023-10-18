@@ -19,7 +19,7 @@ Enter-PSSession -ComputerName SR1.replicar.local
 # Adicionar as entradas HOSTS´s e FQDN ao arquivo hosts.
 
 
-Get-Content -Path "C:\Windows\System32\drivers\etc\hosts" # Verfica quais são as entradas no arquivos hosts.
+Get-Content -Path "C:\Windows\System32\drivers\etc\hosts" # Verficar quais são as entradas no arquivos hosts.
 
 Add-Content -Path "C:\Windows\System32\drivers\etc\hosts" -Value "192.168.0.131 SR1.replicar.local" # Adiciona a entrada no arquivo hosts.
 
@@ -71,7 +71,7 @@ Enable-PSRemoting
 # Habilita a delegação para o domínio especificado.
 
 
-Get-WSManCredSSP  # Verfica a delegação.
+Get-WSManCredSSP  # Verficar a delegação.
 
 Enable-WSManCredSSP -Role Client -DelegateComputer "*.replicar.local" # Adcionar o seguinte destino a delegação.
 
@@ -80,7 +80,7 @@ Enable-WSManCredSSP -Role Client -DelegateComputer "*.replicar.local" # Adcionar
 # Adicionar o domínio ao hosts confiáveis.
 
 
-Get-Item -Path WSMan:\localhost\Client\TrustedHosts # Verfica os hosts confiáveis.
+Get-Item -Path WSMan:\localhost\Client\TrustedHosts # Verficar os hosts confiáveis.
 
 Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value "*.replicar.local" # Adiciona o domínio especificado ao hosts confiáveis.
 
